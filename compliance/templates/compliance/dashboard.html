@@ -1,0 +1,109 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="d-flex" id="wrapper">
+  <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Compliance System</div>
+    <div class="list-group list-group-flush">
+      <a href="#" class="list-group-item list-group-item-action bg-light"
+        >Dashboard</a
+      >
+      <a href="#" class="list-group-item list-group-item-action bg-light"
+        >Audits</a
+      >
+      <a href="#" class="list-group-item list-group-item-action bg-light"
+        >Regulations</a
+      >
+      <a href="#" class="list-group-item list-group-item-action bg-light"
+        >Notifications</a
+      >
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <h1 class="mt-4">Compliance Dashboard</h1>
+
+      <!-- Row for stats -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card bg-primary text-white">
+            <div class="card-body">Audits</div>
+            <div class="card-footer">50 Total Audits</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card bg-success text-white">
+            <div class="card-body">Regulations</div>
+            <div class="card-footer">120 Total Regulations</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card bg-danger text-white">
+            <div class="card-body">Risks</div>
+            <div class="card-footer">30 Total Risks</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card bg-info text-white">
+            <div class="card-body">Notifications</div>
+            <div class="card-footer">8 Unread Notifications</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compliance details table -->
+      <div class="card mt-4">
+        <div class="card-header">Recent Audits</div>
+        <div class="card-body">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Audit Name</th>
+                <th>Status</th>
+                <th>Last Updated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Data Security Audit</td>
+                <td>Completed</td>
+                <td>02/10/2024</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Financial Compliance</td>
+                <td>Ongoing</td>
+                <td>30/09/2024</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Health & Safety Audit</td>
+                <td>Pending</td>
+                <td>28/09/2024</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
